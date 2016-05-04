@@ -10,4 +10,8 @@ add something twice.
 add something third.
 
 
+<<<<<<< HEAD
 add something 4th.
+=======
+create a new branch ...
+>>>>>>> dev
