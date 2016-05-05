@@ -15,5 +15,10 @@ add something 4th.
 =======
 create a new branch ...
 >>>>>>> dev
+<<<<<<< HEAD
 
 creat a new branch
+=======
+jiejuechongtu160505
+>>>>>>> feature1
+jiejuechongtu160505
