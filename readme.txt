@@ -1,6 +1,6 @@
 this is a test (learn git).
 
-it is good soft.
+it is good software.
 
 continue...
 
@@ -23,3 +23,5 @@ jiejuechongtu160505
 >>>>>>> feature1
 jiejuechongtu160505
 Thu May 5 10:27:07 CST 2016
+
+fix bug test  2016 05 05 10:42
