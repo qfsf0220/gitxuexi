@@ -1,6 +1,6 @@
 this is a test (learn git).
 
-it is good soft.
+it is good software.
 
 continue...
 
