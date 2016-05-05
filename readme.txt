@@ -22,3 +22,4 @@ creat a new branch
 jiejuechongtu160505
 >>>>>>> feature1
 jiejuechongtu160505
+Thu May 5 10:27:07 CST 2016
