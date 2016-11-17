@@ -7,6 +7,7 @@ public class test001 {
         int [] aaa={1,2,3,235345,123,423};
         for(int i =0;i<aaa.length;i++){
             System.out.println(i);
+            System.out.println(aaa[i]);
 
         }
     }
