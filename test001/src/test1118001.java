@@ -1,5 +1,3 @@
-package gitxuexi.test001.src;
-
 /**
  * Created by feng.qian on 2016/11/18.
  */
@@ -24,7 +22,6 @@ public class test1118001 {
             {{System.out.println("xiaohuozi");}}
             }
 
-
         int [] myarray = new int [10];
         for (i =1;i<myarray.length;i++){
             myarray[i]=100*i;
@@ -34,8 +31,6 @@ public class test1118001 {
             System.out.println(myarray[i]);
         }
 
-
         }
-
 
     }
