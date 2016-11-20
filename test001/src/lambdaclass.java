@@ -33,12 +33,14 @@ public class lambdaclass {
 
        // 匿名对象作为实例参数传递
         studentdemo2 sd = new studentdemo2();
-//        student2 s2 = new student2();
-//        sd.show(s2); //常规调用
+        student2 s2 = new student2();
+        sd.show(s2); //常规调用
         sd.show(new student2());
 
+        //更全面的匿名
 
-
+        new studentdemo2().show(new student2());
+        //先调用 studentdemo2 .它的show方法 中匿名 引用 student2 类
 
     }
 }
