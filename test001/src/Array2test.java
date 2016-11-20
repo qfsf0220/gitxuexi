@@ -38,11 +38,16 @@ public class Array2test {
 
 
     }
-    //方法
-    public  static void printarr22(int[][] arr){
-        for (int i=0;i<arr.length;i++){
-            for (int j=0;j<arr[i].length;j++){
-                System.out.print(arr[i][j]);
+    /*
+    * 方法的 方式
+    * 范围值类型 为输出形式 所以是 void
+    * 参数列表  是一个 二维数组
+    *
+    * */
+    public  static void printarr22(int[][] arrabc){
+        for (int i=0;i<arrabc.length;i++){
+            for (int j=0;j<arrabc[i].length;j++){
+                System.out.print(arrabc[i][j]);
             }
             System.out.println();
         }
