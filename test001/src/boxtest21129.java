@@ -22,7 +22,7 @@ class boxtest22{
         this.height=height;
     }
     public double chang2(){
-        return 2*(width+height);
+        return 2 * (width + height);
     }
 }
 
@@ -37,6 +37,7 @@ public class boxtest21129 {
         boxtest22 bt22 = new boxtest22(20,20);
         double c22 = bt22.chang2();
         System.out.println(c22);
+        System.out.println("");
 
     }
 }
