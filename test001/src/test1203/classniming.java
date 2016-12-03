@@ -19,8 +19,19 @@ class niming{
 
 }
 
+class test{
+    public void printtt(){
+        System.out.println("hello test");
+    }
+}
+
 public class classniming {
     public static void main(String[] args) {
         niming p = new niming();  //这里直接调用niming类中的方法。
+
+        test t = new test();//这个是普通调用
+
+        new test().printtt();//这个是匿名调用 省略了栈内存创建t  好处就是用一次就回收掉了。
+
     }
 }
