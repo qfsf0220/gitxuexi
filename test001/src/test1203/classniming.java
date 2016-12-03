@@ -32,6 +32,7 @@ public class classniming {
         test t = new test();//这个是普通调用
 
         new test().printtt();//这个是匿名调用 省略了栈内存创建t  好处就是用一次就回收掉了。
-
+        //如果还要使用一次 需要重新new一次。反而可能比较麻烦
+        new test().printtt();
     }
 }
