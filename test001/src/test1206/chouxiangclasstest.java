@@ -79,7 +79,7 @@ public class chouxiangclasstest {
     public static void main(String[] args) {
         Student s = new Student(10,"q",99);
         Worker w = new Worker(20,"f",100);
-        s.want(); //不能继承已经完成的类
+        s.want(); //注意：不能继承已经完成的类
         w.want();
     }
 }
