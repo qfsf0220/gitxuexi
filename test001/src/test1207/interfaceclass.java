@@ -19,14 +19,28 @@ class C{
         u.stop();
     }
 }
-class USBdisk implements USB{
-    public void start (){
+class USBdisk implements USB {
+    public void start() {
         System.out.println(" udisk  work...");
     }
-    public void stop(){
+
+    public void stop() {
         System.out.println(" udisk  stop...");
     }
 }
+
+class booter implements USB{
+    @Override
+    public void start() {
+        System.out.println("booter work");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("booter stop...");
+    }
+}
+
 
 class Printer implements USB{
     public void start(){
