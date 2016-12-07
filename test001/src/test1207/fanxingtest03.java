@@ -21,7 +21,7 @@ class fanxing<F>{
 
 }
 
-public class fanxing03 {
+public class fanxingtest03 {
     public static void main(String [] args){
          fanxing<Integer> f = new fanxing<>(10,20);
 //         f.setNum1(10);
