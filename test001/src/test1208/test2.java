@@ -11,5 +11,8 @@ package test1208;
 public class test2 {
     public static void main(String[] args) {
         System.out.println("");
+        int a [] =new int[10];
+        a[1]=1;
+        System.out.println(a[1]);
     }
 }
