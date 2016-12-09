@@ -20,7 +20,7 @@ class A{
     }
 }
 
-public class justfortest {
+public class fortest {
     public static void main(String[] args) {
         A a = new A(11,"qq");
         Scanner sc = new Scanner(System.in);
