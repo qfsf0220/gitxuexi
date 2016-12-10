@@ -4,6 +4,7 @@ package wxy.test1210;
  用法1.this 关键字用来表示当前对象本身，或当前类的一个实例，通过 this 可以调用本对象的所有方法和属性
  用法2、成员变量与方法内部的变量重名时，希望在方法内部调用成员变量，这时候只能使用this
  用法3.。 作为方法名来初始化对象 也就是相当于调用本类的其它构造方法，它必须作为构造方法的第一句
+ 用法4  作为参数传递 需要在某些完全分离的类中调用一个方法，并将当前对象的一个引用作为参数传递时
  */
 class Demo{
     public int x= 5;
@@ -44,6 +45,27 @@ class Demo3{
     }
     public void say(){
         System.out.println("我是"+name+"  我几岁？"+age);
+    }
+}
+
+
+
+class A{
+    public  A(){
+        new B(this).print();//匿名对象
+    }
+    public void print(){
+        System.out.println("hello form A");
+    }
+}
+class B{
+    A a;
+    public  B(A a){ //匿名对象就是没有名字的对象。如果对象只使用一次，就可以作为匿名对象，代码中 new B(this).print(); 等价于 ( new B(this) ).print();，先通过 new B(this) 创建一个没有名字的对象，再调用它的方法。
+        this.a= a;
+    }
+    public void print(){
+        a.print();
+        System.out.println("hello form B");
     }
 }
 
