@@ -15,7 +15,7 @@ package wxy.test1210;
 
 public class zuoyongyufull {
     public static String name = "qf";//这个是类级别变量 static关键字
-    public int i;//对象实例变量 -- 没有static
+    public int i;//对象实例变量 成员变量 -- 没有static
     //属性块，在类初始化时候运行
     {
         int j = 2;//块级变量。
