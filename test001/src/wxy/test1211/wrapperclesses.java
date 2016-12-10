@@ -40,13 +40,13 @@ class wrapperclesses {
 
 class Dae{
     void demo(){
-        String [] str={"123","123abc","abc123","cdefg"};
+        String [] str={"99","99abc","abc99","cdefg"};
         for (String i:str){
             try{
                 int m= Integer.parseInt(i,10);
                 System.out.println(i+"可以转换为整数"+m);
             }catch (Exception e){
-                System.out.println(i+"无法转换为整数");
+                System.out.println(i+"无法转换为整数"+e);
             }
         }
     }
