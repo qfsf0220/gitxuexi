@@ -1,5 +1,7 @@
 package wxy.test1211;
 
+import java.util.InputMismatchException;
+
 /**
  基本数据类型 	对应的包装类
  byte 	        Byte
@@ -19,7 +21,7 @@ package wxy.test1211;
 
  */
 //简单例子实现int 和 Integer 的互相转换
-public class wrapperclesses {
+class wrapperclesses {
     public static void main(String[] args) {
         int m = 500;
         Integer obj = new Integer(m);  // 手动装箱
@@ -28,5 +30,24 @@ public class wrapperclesses {
 
         Integer obj1 = new Integer(500);
         System.out.println("obj 等价于 obj1？" + obj.equals(obj1));
+
+        System.out.println("---------------");
+        //运行Dae
+        Dae d = new Dae();
+        d.demo();
+    }
+}
+
+class Dae{
+    void demo(){
+        String [] str={"123","123abc","abc123","cdefg"};
+        for (String i:str){
+            try{
+                int m= Integer.parseInt(i,10);
+                System.out.println(i+"可以转换为整数"+m);
+            }catch (Exception e){
+                System.out.println(i+"无法转换为整数");
+            }
+        }
     }
 }
