@@ -22,5 +22,10 @@ public class StringToInt {
                 System.out.println(i+"不能转换  "+"错误提示："+e);
             }
         }
+
+        int a = 88888;
+        String atos= Integer.toString(a);
+        System.out.println("数值转成字符串:"+atos);
+
     }
 }
