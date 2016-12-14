@@ -1,4 +1,4 @@
-package wxy;
+package wxy.test1212_jicheng;
 
 /**
  * 继承可以理解为一个类从另一个类获取方法和属性的过程。如果类B继承于类A，那么B就拥有A的方法和属性。  继承使用 extends 关键字。
@@ -10,7 +10,7 @@ package wxy;
     Teacher 是 People 的子类，People 是Teacher 类的父类。
     子类可以覆盖父类的方法。
     子类可以继承父类除private以为的所有的成员。
-    构造方法不能被继承。
+    构造方法不能被继承。掌握这一点很重要。 一个类能得到构造方法，只有两个办法：编写构造方法，或者根本没有构造方法，类有一个默认的构造方法。
  *
  */
 class People{
