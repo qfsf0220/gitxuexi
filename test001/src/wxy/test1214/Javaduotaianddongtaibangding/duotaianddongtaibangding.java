@@ -1,4 +1,4 @@
-package wxy.test1214.Java多态和动态绑定;
+package wxy.test1214.Javaduotaianddongtaibangding;
 
 /**
  * 在Java中，父类的变量可以引用父类的实例，也可以引用子类的实例。
