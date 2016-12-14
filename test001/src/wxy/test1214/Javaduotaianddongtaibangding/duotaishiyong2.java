@@ -55,3 +55,4 @@ class Master{
         an.eat(f);
     }
 }
+/**/
