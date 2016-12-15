@@ -30,7 +30,6 @@ public class duotaileixingzhuanhuan {
         f = s;
         son s2 = (son)f;
 
-        //因为向下转型存在风险，所以在接收到父类的一个引用时，请务必使用 instanceof 运算符来判断该对象是否是你所要的子类
 
 
 
