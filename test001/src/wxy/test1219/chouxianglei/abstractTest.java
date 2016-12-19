@@ -23,7 +23,7 @@ public class abstractTest {
         t.setName("qf");
         t.work();
 
-        Driver d = new Driver();
+        Farmer d = new Farmer();
         d.setName("sf");
         d.work();
     }
@@ -44,7 +44,7 @@ abstract class People{
     }
     //抽象方法
     public abstract void work();
-
+    //这里的  work 抽象方法不要 同样是一个正常实现的类。
 
 }
 
@@ -56,9 +56,9 @@ class  Teacher extends People{
 }
 
 
-class  Driver extends People{
+class  Farmer extends People{
     //必须实现该方法
     public void work(){
-        System.out.println("i am driver .my name is "+this.getName());
+        System.out.println("i am farmer .my name is "+this.getName());
     }
 }
