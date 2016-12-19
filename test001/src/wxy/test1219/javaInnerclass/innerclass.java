@@ -20,8 +20,10 @@ public class innerclass {
             System.out.println("yes bb");
         }
 
-        //上面已经定义了a是 bb，所以case到 bb println bb
-        switch (a){
+        //上面已经定义了a2是 aa，所以case到 aa println aa
+
+        aaa a2 = aaa.aa;
+        switch (a2){
             case aa:
                 System.out.println("aa");
                 break;
