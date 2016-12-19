@@ -1,6 +1,5 @@
 package wxy.test1217;
 
-import com.sun.xml.internal.rngom.digested.DEmptyPattern;
 
 /**
  * Created by qf on 2016/12/17.
