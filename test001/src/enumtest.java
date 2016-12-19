@@ -1,5 +1,3 @@
-package wxy.test1219.javaInnerclass;
-
 /**
  * 在 Java 中，允许在一个类（或方法、语句块）的内部定义另一个类，称为内部类(Inner Class)，有时也称为嵌套类(Nested Class)。
  *
@@ -8,7 +6,7 @@ package wxy.test1219.javaInnerclass;
  */
 
 
-public class innerclass {
+public class enumtest {
     public static void main(String[] args) {
 
         for (aaa a :aaa.values()){
