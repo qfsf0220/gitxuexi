@@ -11,6 +11,71 @@ package wxy.test1219.jiekou;
 
 public class interfacetest {
     public static void main(String[] args) {
+        satassd s1 = new ssd1(); //初始化 ssd1
+        satassd s2 = new ssd2(); //初始化 ssd2
+
+        s1.write("aaa");
+        s1.read();
+//        satassd s3 = new ssd3() {
+//            @Override
+//            public void write(String abc) {
+//
+//            }
+//        };
+
+        //抽象类 无法被实力化   这里重载了 write方法  但是本意是 这个ssd坏了无法写
 
     }
-}
+
+    }
+
+    interface satassd {
+        public static final int CONLINE = 4;
+
+        public void write(String abc);
+
+        public String read();
+    }
+
+    interface fixssd {
+        String add = "shanghai";
+
+        boolean hasfixed();
+    }
+//ssd1
+    class ssd1 implements satassd,fixssd {
+
+        public void write(String abc) {
+            System.out.println("数据写ok。");
+        }
+
+
+
+        public String read() {
+            return "数据读ok。";
+        }
+
+
+        public boolean hasfixed() {
+            return true;
+        }
+    }
+//ssd2
+    class ssd2 implements satassd {
+        public String read() {
+            return "读取数据完成";
+        }
+
+        public void write(String abc) {
+            System.out.println("写完成。");
+        }
+    }
+
+//ssd3
+    abstract class ssd3 implements satassd {
+        public String read() {
+            return "数据已经读取。写没办法";
+        }
+    }
+
+
