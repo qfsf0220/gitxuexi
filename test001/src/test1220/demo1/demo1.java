@@ -31,4 +31,15 @@ public class demo1 {
         }
     }
 
+    /**
+     * @author feng.qian
+     * @create at 2016-12-20 17:06
+     */
+
+
+    public static class demo2 {
+        public static void main(String[] args) {
+
+        }
+    }
 }
