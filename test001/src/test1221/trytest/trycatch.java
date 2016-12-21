@@ -18,6 +18,7 @@ public class trycatch {
     public static void main(String[] args) {
         try{
         trycatch.err0();
+            System.out.println("这里不会输出到");//一旦异常被引发，程序控制由try块转到catch块。执行永远不会从catch块“返回”到try块。
         }catch (ArithmeticException e){
 
             System.out.println( "报错了 错误是："+e);
