@@ -17,8 +17,17 @@ package test1221.trytest;
 public class trycatch {
     public static void main(String[] args) {
         try{
+        trycatch.err0();
+        }catch (ArithmeticException e){
 
+            System.out.println( "报错了 错误是："+e);
         }
-        catch ()
     }
+
+    static void err0(){
+        int d = 0;
+        int a =55/d;
+        System.out.println(a);
+    }
+
 }

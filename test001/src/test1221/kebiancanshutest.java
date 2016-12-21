@@ -8,7 +8,7 @@ package test1221;
 
 public class kebiancanshutest {
     public static void main(String[] args) {
-        sum(1111,333,444);
+        System.out.println(sum(1111,333,444));
 
     }
     static int sum(int...x) {
