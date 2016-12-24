@@ -76,4 +76,3 @@ class sf implements if2{
     }
 }
 
-public class interfacelearning
