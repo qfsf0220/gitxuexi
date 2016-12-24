@@ -14,7 +14,9 @@ public interface interfacetest {
 
 }
 
-interface  if2{}
+interface  if2{
+    int getsum(int a);
+}
 //类通过关键字 implements 声明自己实现一个或者多个接口，如果实现多个接口，则用逗号隔开。
 class  A implements interfacetest,if2{  //这个是class A 实现了 interfacetest 和 if2接口
     //这里A类继承了这两个接口 必须重写 每个接口的 所有方法
@@ -27,6 +29,11 @@ class  A implements interfacetest,if2{  //这个是class A 实现了 interfacete
     public void aaa() {
 
     }
+
+    @Override
+    public int getsum(int a) {
+        return 0;
+    }
 }
 
 class B extends xx implements interfacetest,if2{ //这里 是又有继承，又有实现
@@ -38,7 +45,11 @@ class B extends xx implements interfacetest,if2{ //这里 是又有继承，又�
 
     @Override
     public void aaa() {
+    }
 
+    @Override
+    public int getsum(int a) {
+        return 0;
     }
 }
 
