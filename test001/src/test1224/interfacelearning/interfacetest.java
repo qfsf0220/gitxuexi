@@ -56,3 +56,24 @@ class B extends xx implements interfacetest,if2{ //这里 是又有继承，又�
 class xx{
 
 }
+//  这里是一个简单的例子，两个class 都实现了if2,但是方式有所不同。
+ class qf implements if2{
+
+    @Override
+    public int getsum(int a) {
+        int sum = 0;
+        for (int i =0;i<a;i++){
+            sum=+i;
+        }
+        return sum;
+    }
+}
+
+class sf implements if2{
+    @Override
+    public int getsum(int a) {
+        return a+123;
+    }
+}
+
+public class interfacelearning
