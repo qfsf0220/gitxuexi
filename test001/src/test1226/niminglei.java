@@ -4,6 +4,8 @@ import org.omg.CORBA.PERSIST_STORE;
 
 /**
  * Created by qfsf on 2016/12/26.
+ 匿名类  与子类有关的匿名类
+        与接口有关的匿名类
  */
 public class niminglei {
     public static void main(String[] args) {
@@ -19,6 +21,25 @@ public class niminglei {
             @Override
             void sound() {
                 System.out.println("chelaileya");//这里重写了sound的方法。覆盖了前面的syso didi
+            }
+        });
+
+        Ball ball = new redBall();
+        ttt.testBall(ball);
+        ball = new blueBall();
+        ttt.testBall(ball);
+
+        ttt.testBall(new redBall(){
+            @Override
+            public void ballColor() {
+                System.out.println("this is a pink ball");
+            }
+        });
+
+        ttt.testBall(new Ball() {
+            @Override
+            public void ballColor() {
+                System.out.println(" 这里必须重写接口ball的  ballColor方法。。自动让你重写了。。");
             }
         });
 
@@ -51,10 +72,34 @@ class Test{
         car.sound();
     }
 
+
+    void testBall(Ball ball){
+        ball.ballColor();
+    }
+
 }
 
 class Car {
     void sound(){
         System.out.println("didi");
+    }
+}
+
+interface Ball{
+    void ballColor();
+}
+
+class redBall implements Ball{
+    @Override
+    public void ballColor() {
+        System.out.println("red ball");
+    }
+}
+
+
+class blueBall implements Ball{
+    @Override
+    public void ballColor() {
+        System.out.println("blue ball");
     }
 }
