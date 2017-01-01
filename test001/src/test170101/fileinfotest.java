@@ -23,5 +23,8 @@ public class fileinfotest {
                 e.printStackTrace();
             }
         }
+
+//        f2.delete(); //这里是删除文件
+
     }
 }
