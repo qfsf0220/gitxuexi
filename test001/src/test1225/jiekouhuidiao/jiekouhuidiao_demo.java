@@ -11,6 +11,9 @@ abstract类 和 interface 都可以有abstract方法
 
  interface 中 只能有 abstract方法 abstract类中 皆可。
 
+
+
+
  */
 public class jiekouhuidiao_demo {
     public static void main(String[] args) {
