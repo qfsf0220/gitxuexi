@@ -15,12 +15,15 @@ public class arraytest {
         Integer dateArray[] = {123,123,2,123,22};
         String strArray[] = {"","123","321","123.5"} ;
         //动态初始化
-        int qf [][] = new int[2][3];
+        int  [][] qf = new int[2][2];
 //        qf[1]= new int[]{123, 22};
 //        qf[2]= new int []{22,33};
-        qf[0] = new int[2];
-        qf[1] = new int[2];
-        System.out.println(qf[0][1]);;
+        qf = new int[][]{{1, 2}, {2, 4},{3,55}};
+
+        Integer [][] qf2= {{1,3},{2,4},{5,6},{7,8}};
+
+        System.out.println(qf[1][1]);
+        System.out.println(qf2[1][1]);
         System.out.println("================");
 
         String qfstr [] = new String[3];//复合类型1
@@ -37,9 +40,10 @@ public class arraytest {
             System.out.println(a);
         }
         System.out.println("-----------");
-        for (int b :qfint){
-            System.out.println(b);
-        }
+//        for (Integer b :qfint){
+// //           int a = new Integer(b);
+//            System.out.println(a);
+//        }
 
 
     }
