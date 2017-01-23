@@ -35,5 +35,24 @@ public class stringtest {
         System.out.println(aaa);
         System.out.println("参数1 需要匹配的第一个字符在源串的位置，参数2 要匹配的最后一个字符在源串中的位置，参数3  字符数组存放目的字符串 参数4 匹配字符串在目的串中的其实位置  ");
 //        System.out.println(ca);
+        System.out.println("------------ String 类的常用方法");
+
+        String test  = "各位老总你们好啊。老总1，张总，老总2，杨总。";
+
+        String test2 = test.concat("还有杨董"); //concat  合并
+        System.out.println(test2);
+
+        String test3 = test.replace('杨','s'); //replace 替换
+        System.out.println(test3);
+
+        System.out.println(test.substring(0,7));// substring 截取
+
+        System.out.println(test3.toUpperCase());//toLowerCase 大小写 转换。
+
+        System.out.println("---------------StringBuffer 类常用的方法。");
+
+
+
+
     }
 }
