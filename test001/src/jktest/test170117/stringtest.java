@@ -51,7 +51,17 @@ public class stringtest {
 
         System.out.println("---------------StringBuffer 类常用的方法。");
 
+        StringBuffer sba = new StringBuffer(test);
+        sba.append("还有谁？！");
+        System.out.println(sba);
+        sba.insert(15,"我要打10个!");
+        System.out.println(sba);
+        sba.setCharAt(10,'啥');//like replace
+        System.out.println(sba);
+        System.out.println(sba.equals(test2)); //比较字符
 
+        Integer inta = 1; //
+        System.out.println(inta.toString()); //int 无法直接使用 toString 方法。
 
 
     }
