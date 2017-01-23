@@ -62,6 +62,7 @@ public class stringtest {
 
         Integer inta = 1; //
         System.out.println(inta.toString()); //int 无法直接使用 toString 方法。
+        System.out.println(Integer.toString(11555));
 
 
     }
