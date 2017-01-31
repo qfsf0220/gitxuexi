@@ -31,6 +31,8 @@ public class jiben_shuju_leixin {
 
          System.out.println(ch1+"对应的unicode位置"+(int)ch1+ "  "+ch2+"对应的unicode位置"+(int)ch2);
         System.out.printf("%s对应的位置%d\t%s对应的位置%d",ch1,(int)ch1,ch2,(int)ch2);
+        int a=12345,b=23020;
+        System.out.printf("%d 对应的是->%s,%d 对应的是->%s",a,(char)a,b,(char)b);
 
 
 
