@@ -25,5 +25,17 @@ public class jiben_shuju_leixin {
         System.out.println("\"char 类型变量  内存分配2个字节，占16位 同 short\"");
         System.out.println("要观察一个字符在Unicode表中的顺序位置，可以使用int类型显示转换，如(int)'a' or int p = 'a'  ");
         System.out.println("若要得到一个 0-65535之间的数 所代表的unicode、表中相对应位置上额字符必须使用char型显示转换。");
+        System.out.println("-------- test --------");
+
+         char ch1= '春',ch2 = '节';
+
+         System.out.println(ch1+"对应的unicode位置"+(int)ch1+ "  "+ch2+"对应的unicode位置"+(int)ch2);
+        System.out.printf("%s对应的位置%d\t%s对应的位置%d",ch1,(int)ch1,ch2,(int)ch2);
+
+
+
+
+
+
     }
 }
