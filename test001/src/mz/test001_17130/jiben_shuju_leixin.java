@@ -34,6 +34,16 @@ public class jiben_shuju_leixin {
         int a=12345,b=23020;
         System.out.printf("%d 对应的是->%s,%d 对应的是->%s",a,(char)a,b,(char)b);
 
+        float xf = 22.77f,tomff=123.789F,weight = 1e-12f;//1的-12次方
+        System.out.println("float变量 内存分配4个字节，占32位。");
+
+        double xd = 234.5,tomdd=234.5d,tomd2=234.5D,length = 1e5;
+        System.out.println("double 内存分配8个字节 ，占64位");
+        System.out.println("精度：double变量在存储double类型数据时保留16位有效数字，实际精度取决于具体数值。");
+
+
+
+
 
 
 
