@@ -25,5 +25,14 @@ public class floattest {
         System.out.println(-8/da);
         //整数除以0 （不是 0.0） 会出现零除异常
         //System.out.println(0/0);
+
+        System.out.println("数值中使用下划线分隔");
+        int binva = 0B1000_0000_0000_0000_0000_0011;
+        double pi = 3.14_15_92_65_36;
+        System.out.println(binva);
+        System.out.println(pi);
+        double hhh = 8_8_8_8.2222;
+        System.out.println(hhh);
+
     }
 }
