@@ -27,9 +27,15 @@ public class floattest {
         //System.out.println(0/0);
 
         System.out.println("数值中使用下划线分隔");
-        int binva = 0B1000_0000_0000_0000_0000_0011;
+        long binva = 0B0000_0000_0000_0000_0111;//0B代表这个是个2进制数  111就是 1+2的1次方+2的2次方
+        int binvb = 0000_0000_0000_0111; //0开头就是代表这个是8进驻数   111就是1+8的一次方+8的2次方
+        int binvc = 111;  //这个是10进制    111就是111
+        int binvd = 0x111;  //0x 开头代表16进制    1+16^1+16^2 （1+16+256 = 273）
         double pi = 3.14_15_92_65_36;
         System.out.println(binva);
+        System.out.println(binvb);
+        System.out.println(binvc);
+        System.out.println(binvd);
         System.out.println(pi);
         double hhh = 8_8_8_8.2222;
         System.out.println(hhh);
