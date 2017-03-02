@@ -25,7 +25,6 @@ public class floattest {
         System.out.println(-8/da);
         //整数除以0 （不是 0.0） 会出现零除异常
         //System.out.println(0/0);
-
         System.out.println("数值中使用下划线分隔");
         long binva = 0B0000_0000_0000_0000_0111;//0B代表这个是个2进制数  111就是 1+2的1次方+2的2次方
         int binvb = 0000_0000_0000_0111; //0开头就是代表这个是8进驻数   111就是1+8的一次方+8的2次方
