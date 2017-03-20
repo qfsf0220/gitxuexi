@@ -12,7 +12,6 @@ public class testarray {
     }
 }
 
-
 class CupSizet{
     enum CupSize2 { small, medium,large}
     CupSize2 size;
