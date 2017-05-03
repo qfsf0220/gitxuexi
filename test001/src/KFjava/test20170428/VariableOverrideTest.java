@@ -24,21 +24,26 @@ public class VariableOverrideTest {
                         ---代码块局部变量(在代码块内定义)
      */
 
-
-
-
-
-    private String name = "qq"; //实例变量
+    private    String name = "qq"; //实例变量
     private  static double price =800; //类变量
     public  static void main(String []args){
         int price =  999;//局部变量
-        System.out.println(price);
-        System.out.println(VariableOverrideTest.price);
-        new VariableOverrideTest().info();
+        System.out.println(price);//局部变量覆盖成员变量。 所以打印999
+        System.out.println(VariableOverrideTest.price);//使用类名限定 就是类变量
+
+        new VariableOverrideTest().info();//运行info方法
+//        VariableOverrideTest va = new VariableOverrideTest();
+//        va.info();
+        new VariableOverrideTest().testx();
+
     }
-    void info(){
-        String name = "ff";
-        System.out.println(name);
+    public  void testx() {
         System.out.println(this.name);
+    }
+
+    void info(){  //info方法
+        String name = "ff";//方法里的局部变量
+        System.out.println(name);//直接访问 输出局部变量值
+        System.out.println(this.name);//使用this限定 就是 实例变量
     }
 }
