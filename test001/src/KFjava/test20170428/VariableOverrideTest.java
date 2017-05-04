@@ -23,8 +23,9 @@ public class VariableOverrideTest {
                         |
                         ---代码块局部变量(在代码块内定义)
      */
-
+    String xx ; //成员变量 自己初始化 局部变量则必须显式的初始化才能用。
     private    String name = "qq"; //实例变量
+
     private  static double price =800; //类变量
     public  static void main(String []args){
         int price =  999;//局部变量
