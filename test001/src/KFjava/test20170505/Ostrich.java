@@ -5,7 +5,10 @@ package KFjava.test20170505;
  */
 public class Ostrich extends Bird{
     public void fly(){
-        System.out.println("鸵鸟");
+        System.out.println("鸵鸟不能飞");//这个是重写父类的同名方法
+    }
+    public void fly(String name){
+        System.out.println(name+"name");//这里是方法重载（方法同名参数不同）
     }
 
     public static  void main(String []args){
