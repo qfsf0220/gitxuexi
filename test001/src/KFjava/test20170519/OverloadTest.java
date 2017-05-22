@@ -1,6 +1,6 @@
 package KFjava.test20170519;
 
-import KFjava.test20170428.OverloadVarargs;
+//import KFjava.test20170428.OverloadVarargs;
 
 /**
  * Created by Administrator on 2017/5/22.
@@ -30,7 +30,7 @@ class Overriding extends OverloadTest{
         super(a);
     }
     public void aaa(String a){
-        System.out.println("重写了aaa()，注意：重写需要方法名，参数列表相同"+"\n否则不是重写，并且子类全校要比父类宽松，值类型挤异常类型要低等");
+        System.out.println("重写了aaa()，注意：重写需要方法名，参数列表相同"+"\n否则不是重写，并且子类全校要比父类宽松，值类型挤异常类型要低等,最后注意:方法类型父类和子类要一致，类方法或者实例方法记得统一");
         super.aaa();
     }
 }
