@@ -1,7 +1,10 @@
 package KFjava.testtemp20170602;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import javax.jws.Oneway;
 import java.util.Objects;
+import java.lang.String;
 
 /**
  * Created by Administrator on 2017/6/2.
@@ -9,14 +12,14 @@ import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
-        Main a =new Main(){
-            public boolean equals(Object obj){
-                return  true;
+        Main a = new Main() {
+            public boolean equals(Object obj) {
+                return true;
             }
         };
-        Main b =a;
-        Main c = new Main(){
-            public boolean equals (Object obj){
+        Main b = a;
+        Main c = new Main() {
+            public boolean equals(Object obj) {
                 return false;
             }
         };
@@ -24,13 +27,23 @@ public class Main {
         boolean b1;
         boolean b2;
         boolean b3;
-        b1= a==b;
-        b2=b.equals(b+"!");
-        b3 =!c.equals(a);
+        b1 = a == b;
+        b2 = b.equals(b + "!");
+        b3 = !c.equals(a);
+
         if (b1 && b2 && b3) {
             System.out.println("Success!");
         }
+        addString("##",20);
     }
+    static void  addString(String a,int b){
+        String atmp="";
+        for(int i =0;i<b;i++){
+            atmp+=a;
+        }
+        System.out.println( atmp);
+    }
+
 }
 //public class Main {
 //            public static void main(String[] args) {
