@@ -11,6 +11,8 @@ public class Test001 {
         System.out.println(m(1L,6L));
         System.out.println(m(5.8,2.2));
 
+        System.out.println( sum(5)  );
+
     }
 
     public static String m(int a ,int b){
@@ -23,6 +25,23 @@ public class Test001 {
 
     public  static double m (double a,double b){
         return (a>3? a:b) < (b-a>6? a:b) ? a:b;
+    }
+
+//返回 1~a 所有数字的和 (普通方式)
+    public static int sum(int a){
+        int result =0;
+        for (int i =1 ;i<=a;i++ ){
+            result +=i;
+        }
+        return result;
+    }
+
+    //(递归方法)
+    public static int sum2 (int a){
+        if (a==1){
+            return 1;
+        }
+        return a+sum2(a-1);
     }
 
 }
