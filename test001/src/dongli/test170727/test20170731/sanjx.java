@@ -2,7 +2,7 @@ package dongli.test170727.test20170731;
 
 public class sanjx {
     public static void main(String []args){
-        sjx(4);
+        sjx(5);
     }
     static void sjx(int a){
         for(int x=1;x<=a;x++) {
