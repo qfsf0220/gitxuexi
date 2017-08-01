@@ -5,12 +5,10 @@ public class test封装 {
     public static void  main(String[]a){
         asd t = new asd();
         //t.name="xxx";//注意这里private的限制 作用域仅仅是同一个class中。
-        t.setName("张总1");
+        t.setName("张总");
         if(t.getName()!=null)
-            System.out.println(t.getName());
-
+            System.out.println(t.getName()+",你好啊。");
     }
-
 }
 
 class asd{
