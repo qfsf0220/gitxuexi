@@ -1,8 +1,5 @@
 package dongli.test170727.test20170731;
 
-/**
- * Created by Administrator on 2017/8/1.
- */
 public class ConstructionTest {
     public static void main(String[]a){
         aa aa= new aa();
