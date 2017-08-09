@@ -10,6 +10,10 @@ public class SuperTest {
     public static void main(String []argf){
         Dog d = new Dog();
         d.move();
+
+
+        Dog2 d2 = new Dog2(6,"沙沙");
+        d2.say();
     }
 }
 
@@ -29,4 +33,25 @@ class Dog extends Anim{
         super.move();
         System.out.println(super.getAbc());
     }
+}
+
+class Animal2{
+    String name;
+    public Animal2(String name){
+        this.name = name;
+    }
+}
+
+class Dog2 extends Animal2{
+    int age;
+    public Dog2(int age,String name){
+        super(name);
+        this.age    =age;
+
+    }
+    public  void say(){
+        System.out.println( name+" "+age+"岁了");
+    }
+
+
 }
