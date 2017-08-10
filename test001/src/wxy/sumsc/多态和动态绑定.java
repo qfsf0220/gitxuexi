@@ -59,7 +59,7 @@ class python extends learn{
 
 
 class student {
-    public  void xuexi(learn lll){
+    public void xuexi(learn lll){
         System.out.println("i am a student,i am learning "+lll.learn());
     }
 }
