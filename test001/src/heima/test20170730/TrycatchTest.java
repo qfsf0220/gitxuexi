@@ -6,7 +6,7 @@ package heima.test20170730;
 class TrycatchTest {
     public static void main(String[]a){
         Demo d = new Demo();
-        int x =d.div(5,4);
+        int x =d.div(5,0);
         System.out.println(x);
 
         System.out.println("这里需要打印。");
