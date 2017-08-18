@@ -22,7 +22,7 @@ public class SelfTryCatch {
 }
 
 class FushuException extends Exception{//自定义一个异常类 ，需要继承Exception
-    int value;
+    private int value;
     FushuException(){
     }
     FushuException(String msg,int value){
