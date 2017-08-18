@@ -14,7 +14,6 @@ class NovalueException extends RuntimeException{
     }
 }
 
-
 interface  Shape{
     void getArea();
 }
@@ -34,8 +33,6 @@ class Rec implements Shape{
         System.out.println(len*wid);
     }
 }
-
-
 
 public class mianjiException {
     public static void main(String []a){
