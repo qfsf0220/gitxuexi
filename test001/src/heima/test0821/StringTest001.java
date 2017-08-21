@@ -35,13 +35,28 @@ public class StringTest001 {
 
         System.out.println(sa.replace('e','x'));//字符e替换为x
         System.out.println(sa.replace("ser","xxx"));//字符串的替换
-        System.out.println(sa.replace("[a-z]","1"));
+        System.out.println(sa.replaceAll("[a-z]","1"));//正则匹配替换
 
         String Stringtolist="aa,sdf|re:dd";
-        String[] s2l =Stringtolist.split("[,|:]");
+        String[] s2l =Stringtolist.split("[,|:]");//通过 xx字符  切割
         for(String aa :s2l){
             System.out.println(aa);
         }
+
+        System.out.println(sa.substring(2));//sa[2:]
+        System.out.println(sa.substring(2,4));//sa[2:4]
+
+        System.out.println(sa.toUpperCase());//转成大写
+        String  saa="     xxxxxxaaaa   ";//去两端空格
+        System.out.println(saa.trim());//对两个字符串进行自然顺序比较 和可以转成大写或小写以后比较
+
+        String comparable1= "aac";
+        String comparable2= "adb";
+        int cp1cp2 = comparable1.compareToIgnoreCase(comparable2);//cp1比cp2 1的a 比 2的d小3 所以 返回-1 如果是大于 就是 正3 这里是字符编码（ASCII码）的差值。
+        System.out.println(cp1cp2);
+
+
+
 
     }
 }
