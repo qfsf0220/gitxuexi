@@ -11,5 +11,11 @@ public class AsciiList {
         }
         char x='钱';
         System.out.println((int) x);
+
+        String x2 = "张总";
+        char[]a =x2.toCharArray();
+        for(char ch: a){
+            System.out.println((int)ch);
+        }
     }
 }
