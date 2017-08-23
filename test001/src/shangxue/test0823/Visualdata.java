@@ -13,7 +13,7 @@ import java.util.GregorianCalendar;
 public class Visualdata {
     public static void main(String[] args) {
 
-        String time = "1988-7-2";
+        String time = "2017-8-23";
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         try {
             Date date = format.parse(time);
@@ -27,6 +27,7 @@ public class Visualdata {
 //            System.out.println(week);
             int daymax = cal.getActualMaximum(Calendar.DATE);
 //            System.out.println(daymax);
+            System.out.println("         "+time);
             System.out.println("日\t一\t二\t三\t四\t五\t六");
             for (int i=0;i<week-1;i++){
                 System.out.print('\t');
