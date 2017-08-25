@@ -40,6 +40,8 @@ public class FrameTest extends Frame {
         g.fillRect(60,60,20,20);//填充长方形。
 
         g.drawImage(img,100,100,null);
+        but = new Button("my but");
+        f.add(but);
 
     }
 
