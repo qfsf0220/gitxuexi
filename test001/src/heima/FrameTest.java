@@ -40,8 +40,20 @@ public class FrameTest {
                                        System.out.println("double click"+a++);
                                    }else System.out.println("click"+a++);
                                }
-                           }
-        );
+                           });
+
+                b.addKeyListener(new KeyAdapter() {
+                    @Override
+                    public void keyPressed(KeyEvent e) {
+                        System.out.println(e.getKeyChar()+ "///"+e.getKeyCode());
+                        System.out.println(KeyEvent.getKeyText(e.getKeyChar()));
+
+                        if (e.isControlDown()&&e.getKeyCode()==KeyEvent.VK_ENTER){
+                            System.out.println("ctrl+enter 组合键 测试");
+                        }
+                    }
+                });
+
 
 
 
