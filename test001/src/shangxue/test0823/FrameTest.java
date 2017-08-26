@@ -18,6 +18,8 @@ public class FrameTest extends Frame {
         setSize(300,300);
         setLocation(66,66);
         setVisible(true);
+        Button b = new Button("anniu");
+        add(b);
 
         addWindowListener(new WindowAdapter() {
             @Override
@@ -40,8 +42,7 @@ public class FrameTest extends Frame {
         g.fillRect(60,60,20,20);//填充长方形。
 
         g.drawImage(img,100,100,null);
-        but = new Button("my but");
-        f.add(but);
+
 
     }
 
