@@ -30,7 +30,7 @@ class Mywindow{
         tf = new TextField(50);
         but = new Button("get dir");
         ta = new TextArea("blank",25,60);
-        d = new Dialog(f,"不好意思 错了",true);//modal 为true dialog没确认前无法操作Frame。
+        d = new Dialog(f,"oh no,it is error",true);//modal 为true dialog没确认前无法操作Frame。
         d.setBounds(250,250,199,99);
         d.setLayout(new FlowLayout());
         l = new Label();
