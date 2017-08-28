@@ -15,7 +15,10 @@ public class FrameTest {
         f.setLocation(200,200);
         f.setLayout(new FlowLayout());
 
-        Button b= new Button("button1");
+
+        TextField tf = new TextField(20);
+
+        Button b= new Button("please input");
         b.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -24,6 +27,18 @@ public class FrameTest {
             }
         }
         );
+        tf.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                int code = e.getKeyCode();
+                if(!(code>=KeyEvent.VK_0 && code <=KeyEvent.VK_9)){
+                    System.out.println( code+"is error");
+                    e.consume();
+                }
+            }
+        });
+
+
         b.addMouseListener(new MouseAdapter() {
                                private int a = 1;
                                @Override
@@ -55,10 +70,9 @@ public class FrameTest {
                 });
 
 
-
-
-
+        f.add(tf);
         f.add(b);
+
         f.setVisible(true);
 
         f.addWindowListener(new mywin());
@@ -89,6 +103,5 @@ class mywin extends WindowAdapter{
         System.out.println("关闭");
         System.exit(9);
     }
-
 
 }
