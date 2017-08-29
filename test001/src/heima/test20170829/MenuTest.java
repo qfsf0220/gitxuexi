@@ -5,10 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by Administrator on 2017/8/29.
@@ -21,6 +18,9 @@ public class MenuTest {
     private MenuItem closeItem,subItem1,subItem2,subItem3,subItem4,subItem5;
     private FileDialog openDia,saveDia;
     private TextArea ta;
+
+
+    private  File file;
 
     MenuTest(){
         init();
@@ -82,6 +82,33 @@ public class MenuTest {
                 System.exit(0);
             }
         });
+        subItem3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                if (file==null  ){
+                    saveDia.setVisible(true);
+                    String dirPath = saveDia.getDirectory();
+                    String fileName = saveDia.getFile();
+
+
+
+                    if(dirPath==null || fileName == null)
+                        return;
+                    file = new File(dirPath,fileName);
+
+                }
+                    try{
+                        BufferedWriter buff = new BufferedWriter(new FileWriter(file));
+                        String text = ta.getText();
+                        buff.write(text);
+                    }catch (IOException eee){
+                        throw new RuntimeException(eee);
+                    }
+
+            }
+        });
+
+
         subItem2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -93,7 +120,7 @@ public class MenuTest {
                     return;
                 }
                 ta.setText("");
-                File file = new File(dirPath,fileName);
+                file = new File(dirPath,fileName);
                 try {
                     BufferedReader buff = new BufferedReader(new FileReader(file));
                     String line = null;
