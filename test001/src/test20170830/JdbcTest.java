@@ -21,7 +21,7 @@ public class JdbcTest {
 
         Connection con1 = DriverManager.getConnection(URL,NAME,PASSWORD);
         Statement state =con1.createStatement();
-        ResultSet rs = state.executeQuery("SELECT  * FROM user");
+        ResultSet rs = state.executeQuery("SELECT  * FROM user  skip 10 limit 10");
         while (rs.next()){
             System.out.print(rs.getInt(1)+"\t");
             System.out.print(rs.getString(2)+"\t");
@@ -31,11 +31,6 @@ public class JdbcTest {
             System.out.println();
 
         }
-
-
-
-
-
     }
 
 }
