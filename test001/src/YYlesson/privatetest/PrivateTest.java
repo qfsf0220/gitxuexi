@@ -30,6 +30,8 @@ class SS{
 public class PrivateTest {
     public static void main(String[] args) {
         SS s  =new SS();
+        s.setName("qq");
+        s.setAge(22);
         System.out.println(s.getName()+s.getAge());
 
     }
