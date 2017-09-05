@@ -63,10 +63,12 @@ public class timetest {
         System.out.println("zzzzzzzzzzzz");
         String ss = now2.format(dtf);
 
-        String sslist[] =ss.trim().split("[,-]" );
+        String sslist[] =ss.trim().split("[,-,\\s+]" );
         for(String i : sslist){
             System.out.println(i);
         }
+
+
         boolean b = "abc".matches("[a,b,c]{3}");
         System.out.println(b);
 
