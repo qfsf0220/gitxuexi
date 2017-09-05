@@ -60,13 +60,31 @@ public class timetest {
         sb.append("qf");
         sb.trimToSize();
 
-        System.out.println("--------");
+        System.out.println("zzzzzzzzzzzz");
         String ss = now2.format(dtf);
 
-        String sslist[] =ss.trim().split("-|:| " );
+        String sslist[] =ss.trim().split("[,-]" );
         for(String i : sslist){
             System.out.println(i);
         }
+        boolean b = "abc".matches("[a,b,c]{3}");
+        System.out.println(b);
 
+
+    }
+}
+
+class RegexTest {
+    public static void main(String[] args) {
+        checkPhone();
+    }
+
+    public static void checkPhone(){
+        String phone="13681891872";
+        String regex = "[1-9][0-9]{10}";
+        boolean flag = phone.matches(regex);
+        if(flag){
+            System.out.println("phone number is ok");
+        }else System.err.println("phone number is error");
     }
 }
