@@ -5,8 +5,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.chrono.ChronoPeriod;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.lang.String;
+
 
 /**
  * Created by Administrator on 2017/9/4.
@@ -42,12 +45,28 @@ public class timetest {
         LocalDateTime now2 = LocalDateTime.now();
         System.out.println(now2);
 
+        System.out.println( now2.plusDays(2) );
+
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(" yyyy-mm-dd HH:mm:ss");
+        System.out.println(now2.format(dtf));
+
+        LocalDateTime localDateTime = LocalDateTime.parse("2017-07-20T15:27:44");
+        System.out.println("字符串"+localDateTime);
 
 
+        StringBuffer sb = new StringBuffer(now2.format(dtf));
 
+        System.out.println(sb.length() );
+        sb.append("qf");
+        sb.trimToSize();
 
+        System.out.println("--------");
+        String ss = now2.format(dtf);
 
-
+        String sslist[] =ss.trim().split("-|:| " );
+        for(String i : sslist){
+            System.out.println(i);
+        }
 
     }
 }
