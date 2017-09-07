@@ -19,7 +19,7 @@ public class FileWriteTest {
         FileReader fr = new FileReader("D://asciilist.txt");
         int num = fr.read(a);
         String str = new String(a,5,num);
-        System.out.println("文本长度"+num);
+        System.out.println("文本长度 "+num);
         System.out.println(str);
     }
 }
