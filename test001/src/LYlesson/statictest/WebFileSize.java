@@ -14,7 +14,7 @@ public class WebFileSize {
         double sizek;
         URL url = null;
         try {
-            url = new URL("https://avatars1.githubusercontent.com/u/13790508?v=4&s=460");
+            url = new URL("https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=2015085443,2304783346&fm=73");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
