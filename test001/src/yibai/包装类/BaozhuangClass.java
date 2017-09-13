@@ -1,6 +1,7 @@
 package yibai.包装类;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
+import wxy.sumscop20170811.InterfaceUsedbyObj;
 
 /**
  * Created by Administrator on 2017/9/12.
@@ -27,6 +28,17 @@ public class BaozhuangClass {
         Integer int2  =Integer.valueOf(100);
         byte b= int2.byteValue();
 
+        int a  = Integer.sum(1,1);
+        int c =a>b?a:b;
+        System.out.println();
+        System.out.println(c);
+        String str2= "1010101010";
+        Integer intstr2 = Integer.valueOf(str2,2);
+        int ints2=Integer.parseInt(str2,2);
+        System.out.println(ints2);
+
+        int xx = Integer.max(5,6)>Integer.min(7,8)?c:a;
+        System.out.println(xx);
 
     }
 }
