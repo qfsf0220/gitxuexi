@@ -20,6 +20,7 @@ public class ClockApplet extends Applet implements Runnable{
         t = new Thread(this);
         t.start();
     }
+
     public void run(){
         t1 = Thread.currentThread();
         while(t1 == t){
