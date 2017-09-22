@@ -14,7 +14,7 @@ public class Log4jTest {
         for (int i = 1;i<=5;i++){
             logger.warn("hello "+i);
         }
-            logger.info("this is a info");
+            logger.info("this is a info"+qf);
             logger.warn("this is a warning");
             logger.debug("this is a debug ");
             logger.error("this is a error");
