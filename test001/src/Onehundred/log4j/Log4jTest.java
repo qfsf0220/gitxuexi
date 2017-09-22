@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4jTest {
 
-        private String qf = "qf";
+        private static String qf = "qf";
         private static Logger logger= LogManager.getLogger(Log4jTest.class);
 
     public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class Log4jTest {
             logger.warn("this is a warning");
             logger.debug("this is a debug ");
             logger.error("this is a error");
+            logger.fatal("this is a fatal");
 
     }
 }
