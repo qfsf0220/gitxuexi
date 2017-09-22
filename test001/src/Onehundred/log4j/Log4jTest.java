@@ -11,14 +11,15 @@ public class Log4jTest {
         private static Logger logger= LogManager.getLogger(Log4jTest.class);
 
     public static void main(String[] args) {
-//        for (int i = 0;i<10;i++){
-//            logger.warning("hello "+i);
-//        }
+        for (int i = 1;i<=5;i++){
+            logger.warn("hello "+i);
+        }
             logger.info("this is a info");
             logger.warn("this is a warning");
             logger.debug("this is a debug ");
             logger.error("this is a error");
-            logger.fatal("this is a fatal");
+            logger.fatal("this is a fatal ");
+
 
     }
 }
