@@ -19,23 +19,11 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.40-bin" level="project" />
     <orderEntry type="module-library">
       <library>
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://E:/zxing22.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="zxing22" level="project" />
-    <orderEntry type="module-library">
-      <library>
         <CLASSES>
-          <root url="jar://E:/zxing-2.1.jar!/" />
+          <root url="jar://E:/zxing2/out/artifacts/zxing2_jar/zxing2.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://E:/zxing-2.1.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
