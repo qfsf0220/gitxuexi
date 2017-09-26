@@ -8,6 +8,8 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.HashMap;
+import java.util.Random;
+import java.util.concurrent.Callable;
 
 /**
  * Created by Administrator on 2017/9/25.
@@ -30,12 +32,15 @@ public class QRcode {
 
             MatrixToImageWriter.writeToPath(bitMatrix,format,file);
 
+
+
             System.out.println("done.");
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-
+        String s = new String(content);
+        System.out.println(s);
     }
 }
