@@ -1,9 +1,11 @@
 package test170926;
-
+import java.util.Scanner;
 /**
  * Created by Administrator on 2017/9/26.
  */
 public class StringCompare {
+
+
     public static void main(String[] args) {
         String a = new String("aaa");
         String b = "aaa";
@@ -30,7 +32,32 @@ public class StringCompare {
         System.out.println(b==d);
         System.out.println(a1==a);
 
+        String sss="abc123";
+        StringBuffer reverse = new StringBuffer(sss).reverse().insert(1,i);
+        System.out.println(reverse);
 
+        String sss2 = "qfsf.com";
+        String rsss2 = new StringBuffer(sss2).reverse().toString();
+        System.out.println(rsss2);
+
+        String sss3 = "ctrl shift alt";
+        char [] cs3 = sss3.toCharArray();
+        System.out.println(cs3.length);
+//        for (char cc1 :cs3){
+//            System.out.println(cc1);
+//        }
+        char [] rcs3 =new char[cs3.length];
+        for(int ci =cs3.length-1;ci>=0;ci--){
+            for (int ii =0;i<=cs3.length;i++){
+                rcs3[ii]=cs3[ci];
+            }
+
+        }
+        System.out.println("+++++");
+        for (char xx :rcs3){
+            System.out.println(xx);
+        }
+        System.out.println(rcs3.toString());
 
     }
 }
