@@ -46,18 +46,29 @@ public class StringCompare {
 //        for (char cc1 :cs3){
 //            System.out.println(cc1);
 //        }
-        char [] rcs3 =new char[cs3.length];
-        for(int ci =cs3.length-1;ci>=0;ci--){
-            for (int ii =0;i<=cs3.length;i++){
-                rcs3[ii]=cs3[ci];
-            }
+        char [] rcs3 =new char[cs3.length+1];
+        int aa =0;
+        for (int xx=cs3.length-1;xx>=0;xx--) {
+
+            rcs3[aa]=cs3[xx];
+            aa++;
+//            System.out.println(aa+" "+xx);
+
+
+//        char [] rcs3 =new char[cs3.length+1];
+//        for(int ci =cs3.length-1;ci>=0;ci--){
+//            for (int ii =0;ii<=cs3.length;ii++){
+//                rcs3[ii]=cs3[ci];
+//                System.out.println(ii +"  "+ci);
+//
+//            }
 
         }
-        System.out.println("+++++");
-        for (char xx :rcs3){
-            System.out.println(xx);
-        }
-        System.out.println(rcs3.toString());
+        System.out.println("------");
+//        for (char xx :rcs3){
+//            System.out.println(xx);
+//        }
+        System.out.println(String.valueOf(rcs3));
 
     }
 }
