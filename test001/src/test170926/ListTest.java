@@ -1,5 +1,6 @@
 package test170926;
 
+
 import test1220.demo1.demo1;
 
 import java.util.ArrayList;
@@ -35,8 +36,11 @@ public class ListTest {
                 Arrays.toString(c)
         );
 
-
-
+        System.out.println("============");
+        MyClass mc = new MyClass();
+        mc.myMethod();
+        System.out.println(mc.sum(1, 2, 3));
+        System.out.println(mc.sum(1, 2));
 
 
     }
@@ -53,3 +57,26 @@ public class ListTest {
 
 }
 
+class MyClass{
+    MyClass(){
+        System.out.println("...");
+    }
+    MyClass(int i){
+        System.out.println(i);
+    }
+
+    void myMethod(){
+        System.out.println("method:...");
+    }
+    void myMethod(String s){
+        System.out.println(s);
+    }
+    int sum(int a ,int b){
+        return  a+b;
+    }
+    int sum(int a,int b,int c){
+        return a+b+c;
+    }
+
+
+}
