@@ -60,7 +60,7 @@ public class FileAct {
         BufferedWriter bw2 = new BufferedWriter(new FileWriter("E:/test20170929/abc/3.txt"));
         bw2.write("this is file4 ...\r\n");//windows 换号符号就是  \r\n
         bw2.close();
-        bw2 = new BufferedWriter(new FileWriter("E:/test20170929/abc/3.txt",true));
+        bw2 = new BufferedWriter(new FileWriter("E:/test20170929/abc/3.txt",true));//FileWriter 第二个参数就是append文本
         bw2.write("this is file4 addtion...\r\n");
         bw2.close();
         BufferedReader br = new BufferedReader(new FileReader("E:/test20170929/abc/3.txt"));
