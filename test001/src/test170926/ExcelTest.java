@@ -31,6 +31,7 @@ public class ExcelTest {
         empinfo.put("3", new Object[]{"2","杨总","31"});
         empinfo.put("4", new Object[]{"3","丹哥","30"});
         empinfo.put("5", new Object[]{"4","小伙子","25"});
+        empinfo.put("6", new Object[]{"4","小伙子","25"});
 
         Set<String> keyid =empinfo.keySet();
         int rowid =0;
@@ -41,9 +42,6 @@ public class ExcelTest {
 
             XSSFCellStyle mystyle = workbook.createCellStyle();
             mystyle.setFillBackgroundColor(HSSFColor.BLUE.index);
-
-
-
 
             for(Object obj:objectArr){
                 Cell cell = row.createCell(cellid++);
