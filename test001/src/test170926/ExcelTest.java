@@ -1,10 +1,10 @@
 package test170926;
 
 import com.sun.corba.se.spi.ior.ObjectKey;
+import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.xssf.usermodel.*;
 import sun.text.resources.cldr.uk.FormatData_uk;
 
 import javax.jnlp.FileOpenService;
@@ -39,9 +39,16 @@ public class ExcelTest {
             Object[] objectArr = empinfo.get(key);
             int cellid = 0;
 
+            XSSFCellStyle mystyle = workbook.createCellStyle();
+            mystyle.setFillBackgroundColor(HSSFColor.BLUE.index);
+
+
+
+
             for(Object obj:objectArr){
                 Cell cell = row.createCell(cellid++);
                 cell.setCellValue((String) obj);
+                cell.setCellStyle(mystyle);
             }
         }
         FileOutputStream out2 = new FileOutputStream(new File("E:\\test20170929\\abc\\20170930II.xlsx"));
