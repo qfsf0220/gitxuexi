@@ -13,6 +13,7 @@ public class ClassTest001
         System.out.println(model);
         System.out.println("---");
         new Mobile3("xiaohuozi", "yangzong", "zhangzong");
+        new Mobile3("qf");
     }
 }
 
@@ -28,7 +29,7 @@ class Mobile3{
         System.out.println("<"+model+" "+memory+" "+screen+">");
     }
     Mobile3(String ...user){
-        System.out.println("The IPHONE user is:");
+        System.out.printf("The "+user.length+" %s:"+"\n",(user.length==1?"user is":"users are"));
         for(String i:user){
             System.out.println("\t\t\t"+i);
         }
