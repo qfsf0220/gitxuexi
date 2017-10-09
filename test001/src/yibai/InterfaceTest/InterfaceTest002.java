@@ -1,5 +1,7 @@
 package yibai.InterfaceTest;
 
+import KFjava.test20170519.Shape_test;
+
 /**
  * Created by Administrator on 2017/10/9.
  */
@@ -28,4 +30,11 @@ interface Player{
     boolean forward(double amount);
 
     double rewind();
+}
+
+interface Sharp{
+    void setX(double x);
+    void setY(double y);
+    double getX();
+    double getY();
 }
