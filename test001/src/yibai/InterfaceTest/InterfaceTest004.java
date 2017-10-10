@@ -34,5 +34,4 @@ abstract class M2 implements A3{
     public int a3add(int a,int b){
         return a+b;
     }
-
 }
