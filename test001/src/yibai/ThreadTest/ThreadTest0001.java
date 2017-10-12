@@ -44,7 +44,7 @@ class SecondThread implements Runnable{
     public void run(){
         for (;i<100;i++){
             //当线程类实现runnable接口时，只能用thread.currentThread()方法
-            System.out.println(Thread.currentThread().getName()+" :"+i);
+            System.out.println(Thread.currentThread().getName()+" :"+i)  ;
         }
     }
 }
