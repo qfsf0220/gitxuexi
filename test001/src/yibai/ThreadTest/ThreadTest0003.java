@@ -1,15 +1,15 @@
 package yibai.ThreadTest;
 
 import java.util.Random;
-import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.*;
 
 /**
  * Created by Administrator on 2017/10/13.
  */
 public class ThreadTest0003 {
     public static void main(String[] args) {
-        demo5();
+//        demo5();//针对 线程 A B C 各自开始准备，直到三者都准备完毕，然后再同时运行 。
+        demo6(); //让子线程去计算从 1 加到 100，并把算出的结果返回到主线程。
     }
     static void demo5() {
         int runner = 3;
@@ -41,6 +41,36 @@ public class ThreadTest0003 {
                     System.out.println("全部完成。 " + rn + " starting. ");
                 }
             }).start();
+        }
+    }
+
+//我们经常要创建子线程来做一些耗时任务，然后把任务执行结果回传给主线程使用，这种情况在 Java 里要如何实现呢？
+    //由于 Runnable的run 方法并不返回结果  所以需要使用到 接口类 Callable
+    static void demo6(){ //demo6，让子线程去计算从 1 加到 100，并把算出的结果返回到主线程。
+        Callable<Integer> callable = new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                System.out.println("start---");
+                Thread.sleep(1000);
+                int result = 0;
+                for (int i =0;i <=100;i++){
+                    result +=i;
+                }
+                System.out.println("finished. return result");
+                return result;
+            }
+        };
+        FutureTask<Integer> futureTask = new FutureTask<Integer>(callable);
+        new Thread(futureTask).start();
+
+        try {
+            System.out.println("before futureTask.get()");
+            System.out.println("result: "+ futureTask.get());
+            System.out.println("after futureTask.get()");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
         }
     }
 
