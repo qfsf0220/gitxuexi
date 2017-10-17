@@ -16,7 +16,11 @@ public class ThreadCallable002 {
         FutureTask<String> ff = new FutureTask<String>(new Callable<String>() {
             @Override
             public String call() throws Exception {
-                return String.valueOf("sfsd");
+                String result="";
+                for (int i =0;i<=100;i++){
+                    result=result+""+i;
+                }
+                return  result;
             }
         });
         new Thread(ff).start();
