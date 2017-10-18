@@ -26,6 +26,9 @@ public class SystemTest {
         stringMap.put(3, "cc");
         stringMap.put(4, "dd");
         stringMap.put(5, "ee");
+        for (int i:stringMap.keySet()){
+            System.out.println(i+" "+stringMap.get(i));
+        }
 
         System.out.println(stringMap.get(0));
         Iterator<Integer> stringIterator = stringMap.keySet().iterator();
