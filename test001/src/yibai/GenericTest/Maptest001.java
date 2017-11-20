@@ -1,9 +1,6 @@
 package yibai.GenericTest;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Administrator on 2017/10/19.
@@ -32,6 +29,24 @@ public class Maptest001 {
         for(Object i :m1.keySet()){
             System.out.printf("(%s) ",m1.get(i));
         }
+
+        System.out.println();
+
+        int a;
+        int b;
+        while (true){
+            int a1 = new Random().nextInt(10);
+            int b1 = new Random().nextInt(10);
+            if (a1+b1<=10){
+                a=a1;
+                b=b1;
+
+            }else continue;
+            break;
+
+        }
+        System.out.println("a:"+a +" "+"b:"+b);
+
     }
 
 
