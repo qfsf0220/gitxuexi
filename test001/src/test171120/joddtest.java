@@ -9,13 +9,18 @@ import jdk.nashorn.internal.scripts.JD;
 import jodd.datetime.JDateTime;
 import jodd.datetime.Period;
 import  jodd.format.Printf;
+import jodd.util.StringUtil;
 
 import java.sql.Timestamp;
 import jodd.datetime.DateTimeStamp;
+import jodd.madvoc.meta.In;
 import jodd.mail.Email;
+import jodd.typeconverter.TypeConverterManager;
 import jodd.util.StringUtil;
 import jodd.util.SystemUtil;
+import sun.plugin.com.TypeConverter;
 
+import javax.print.attribute.IntegerSyntax;
 import java.net.StandardSocketOptions;
 
 import java.util.Calendar;
@@ -26,6 +31,7 @@ public class joddtest {
        joddtest jd = new joddtest();
        jd.dateTest();
        jd.sendEmail();
+       jd.strTest();
     }
 
     private static void testprint(){
@@ -54,11 +60,17 @@ public class joddtest {
     }
 
     private void strTest(){
+        String a = "asdascxvdfyhertw";
+        String ab = StringUtil.capitalize("q23");
+        String [] al = StringUtil.split(a,"d");
+        for (String i:al){
+            System.out.println(i);
+        }
 
     }
 
     private void sendEmail(){
-        Email email = Email.create().from("qq@qq.com").to("82970496@qq.com").subject("hello").addText("this is a test");
+//        Email email = Email.create().from("qq@qq.com").to("82970496@qq.com").subject("hello").addText("this is a test");
     }
 
 
