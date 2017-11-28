@@ -9,6 +9,7 @@ import jdk.nashorn.internal.scripts.JD;
 import jodd.datetime.JDateTime;
 import jodd.datetime.Period;
 import  jodd.format.Printf;
+import jodd.io.watch.DirWatcher;
 import jodd.util.StringUtil;
 
 import java.sql.Timestamp;
@@ -66,7 +67,8 @@ public class joddtest {
         for (String i:al){
             System.out.println(i);
         }
-
+        DirWatcher dw= new DirWatcher("e:/","*.py");
+        
     }
 
     private void sendEmail(){
