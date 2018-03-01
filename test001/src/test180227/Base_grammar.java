@@ -11,6 +11,7 @@ public class Base_grammar {
             bg.wwhile();
             bg.sum();
             bg.ffor();
+
         bg.bbreak();
         bg.ccontinue();
         bg.fffor();
@@ -18,6 +19,7 @@ public class Base_grammar {
         bg.addscore();
         bg.aarray();
         bg.getMax();
+        bg.getMaxAge(87,87,88,93);
     }
 
 
@@ -150,6 +152,16 @@ public class Base_grammar {
             }
         }
         System.out.println("the max is :"+max);
+    }
+
+    void getMaxAge(int yangzong,int zhangzong,int dange,int xiaohuozi){
+        int[] ages = {yangzong, zhangzong, dange, xiaohuozi};
+        int max = xiaohuozi;
+        for (int i :ages){
+            if (i < max)
+            max = i;
+        }
+        System.out.println("max:"+max);
     }
 
 
