@@ -1,4 +1,5 @@
 package test180227;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,11 @@ public class Base_grammar {
         bg.aarray();
         bg.getMax();
         bg.getMaxAge(87,87,88,93);
+        bg.getsum(new int[]{1, 3, 4});
+        bg.sort(new int[]{3, 5, 6, 6, 4});
+        System.out.println(bg.getRandom(6));
+//        System.out.println("~~~~~~~~"+(int)(Math.random()*10));
+        bg.getRandomAndPrintFirstThree();
     }
 
 
@@ -164,6 +170,56 @@ public class Base_grammar {
         System.out.println("max:"+max);
     }
 
+    void getsum(int[]a){
+        int sum = 0;
+        for(int i :a){
+            sum += i;
+        }
+        System.out.println("the sum :"+ sum);
+    }
 
+    void sort(int []a){
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+        int count=0;
+        for(int i :a){
+            count++;
+        }
+        System.out.println("this array has "+count+ " items");
+    }
+    //重载
+    void func1(int a){
+        System.out.println(a);
+    }
+    void func1(String a){
+        System.out.println(a);
+    }
+    void func1(int []a){
+        System.out.println(a);
+    }
+    void  func1(int[]a,String b){
+        System.out.println(Arrays.toString(a)+b);
+    }
+
+
+     String getRandom(int aaaa){
+         int a[] = new int[aaaa];
+         for(int i =0;i<aaaa;i++){
+             a[i] = (int) (Math.random() * 100);
+         }
+         return Arrays.toString(a);
+     }
+
+     void getRandomAndPrintFirstThree(){
+         int[] score = new int[(int) (Math.random()*10)];
+         System.out.println(score.length);
+         for (int i =0;i<score.length;i++){
+             score[i] = (int) (Math.random() * 100);
+         }
+         Arrays.sort(score);
+         for(int i=score.length-1;i>0;i--){
+             System.out.print(score[i]+",");
+         }
+     }
 
 }
