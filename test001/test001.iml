@@ -10,55 +10,35 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/test171120/jodd-all-3.9.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/poi-bin-3.17-20170915/poi-3.17/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Downloads/poi-bin-3.17-20170915/poi-3.17/lib" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/poi-bin-3.17-20170915/poi-3.17" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="file://$USER_HOME$/Downloads/poi-bin-3.17-20170915/poi-3.17/docs/apidocs" />
-        </JAVADOC>
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Downloads/poi-bin-3.17-20170915/poi-3.17" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/apache-log4j-2.9.1-bin" />
+          <root url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$USER_HOME$/Downloads/apache-log4j-2.9.1-bin" />
+          <root url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" />
         </SOURCES>
-        <jarDirectory url="file://$USER_HOME$/Downloads/apache-log4j-2.9.1-bin" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/Downloads/apache-log4j-2.9.1-bin" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/zxing/core/classes/artifacts/core_jar" />
+          <root url="jar://$MODULE_DIR$/src/core.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Documents/zxing/core/classes/artifacts/core_jar" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src/poi-3.17" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/src/poi-3.17/docs/apidocs" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/src/poi-3.17" recursive="false" />
       </library>
     </orderEntry>
   </component>
