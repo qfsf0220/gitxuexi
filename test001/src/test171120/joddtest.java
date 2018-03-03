@@ -19,7 +19,7 @@ import jodd.mail.Email;
 import jodd.typeconverter.TypeConverterManager;
 import jodd.util.StringUtil;
 import jodd.util.SystemUtil;
-import sun.plugin.com.TypeConverter;
+//import sun.plugin.com.TypeConverter;
 
 import javax.print.attribute.IntegerSyntax;
 import java.net.StandardSocketOptions;
