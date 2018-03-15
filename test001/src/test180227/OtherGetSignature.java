@@ -29,7 +29,7 @@ public class OtherGetSignature {
             param.put("SignatureMethod" , "HMAC-SHA1");
             param.put("SignatureNonce" , "15215528852366");
             param.put("SignatureVersion" , "1.0");
-            param.put("AccessKeyId" , "");
+            param.put("AccessKeyId" , "123456");
             param.put("Timestamp" , "2018-03-13T06:35:00Z");
 
 
