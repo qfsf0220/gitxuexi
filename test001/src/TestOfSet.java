@@ -1,3 +1,6 @@
+
+import sun.rmi.runtime.Log;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -33,6 +36,15 @@ public class TestOfSet {
     public static void main(String[] args) {
         TestOfSet tos = new TestOfSet();
         tos.fangfaAdd();
+        List<String> strArraylist = new ArrayList<>();
+        List<Integer> intArraylist = new ArrayList<>();
+        Class csal =strArraylist.getClass();
+        Class cial =intArraylist.getClass();
+
+        if(csal.equals(cial)) {
+            System.out.println("same");
+        }
+
     }
 }
 
@@ -56,3 +68,51 @@ class studentofSet{
     }
 
 }
+
+
+class BoxNoGeneric{ // 泛型类//这里obj只能装入 String类型元素，无法使用其他类型元素，无法复用，这时需要用到泛型
+    private String obj;
+
+    public void setObj(String obj) {
+        this.obj = obj;
+    }
+
+    public String getObj() {
+        return obj;
+    }
+}
+
+class BoxGenetic<T> {
+    private T obj;
+
+    public void setT(T t) {
+        this.obj = obj;
+    }
+
+    public T getT() {
+        return obj;
+    }
+
+    BoxGenetic<Integer> bg = new BoxGenetic<>();
+    BoxGenetic<Boolean> bg2 = new BoxGenetic<>();
+    BoxGenetic<Double> bg3 = new BoxGenetic<>();
+}
+
+interface Generator<T> {  //泛型接口
+    public T testfunc();
+}
+
+class dointerface<T> implements Generator<T>{ //实现
+    public T testfunc(){
+        return null;
+    }
+}
+
+class FruitGenerator implements Generator<String>{
+    String[] fruits = new String[]{"a", "b", "c"};
+    public String testfunc(){
+        return fruits[1];
+    }
+}
+//泛型方法。。。to be continue....
+
