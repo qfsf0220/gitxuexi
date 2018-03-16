@@ -1,10 +1,7 @@
 
 import sun.rmi.runtime.Log;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Administrator on 2018/3/16.
@@ -29,6 +26,29 @@ public class TestOfSet {
         lesson ll2 = (lesson) lesson_set.get(1);
         System.out.println(ll2.getClass());
         System.out.println(ll2.id +":"+ ll2.name);
+
+        lesson[] lessonlist = {new lesson("zz", "3"), new lesson("yz", "4")};
+
+        lesson_set.addAll(2,Arrays.asList(lessonlist));
+
+        lesson ll3 =  lesson_set.get(2);
+        lesson ll4 =  lesson_set.get(3);
+        System.out.println(ll3.id +":"+ ll3.name +" "+ ll4.id +":"+ ll4.name);
+
+
+        System.out.println("-------遍历 lesson_set");
+
+        for (int i=0;i<lesson_set.size();i++){
+            lesson l = lesson_set.get(i);
+            System.out.println(l.id+":"+l.name);
+        }
+
+        System.out.println("-----遍历2----通过迭代器");
+        Iterator it = lesson_set.iterator();
+        while (it.hasNext()) {
+            lesson l = (lesson) it.next();
+            System.out.println(l.id+" " +l.name);
+        }
 
 
     }
