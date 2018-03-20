@@ -135,4 +135,10 @@ class FruitGenerator implements Generator<String>{
     }
 }
 //泛型方法。。。to be continue....
+class  abc<T>{
+    private T key;
+    public abc(T key){
+        this.key = key;
+    }
+}
 
