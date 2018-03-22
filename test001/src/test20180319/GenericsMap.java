@@ -23,6 +23,11 @@ public class GenericsMap {
             System.out.println(stringIterator.next());
         }
 
+        Collection colltest =  stringStringMap.values();
+        for (Object i : colltest) {
+            System.out.println(i+"~~~");
+        }
+
         Iterator<String> stringIterator1 = stringStringMap.values().iterator();
         while (stringIterator1.hasNext()){
             System.out.println(stringIterator1.next());
@@ -41,9 +46,6 @@ public class GenericsMap {
         for (Object i : set1) {
             System.out.println(i+" --- "+stringStringMap.get(i));
         }
-
-        Collection colltest =  stringStringMap.values();
-
 
         Collection<String> list1 = stringStringMap.keySet();
         for (String i : list1) {

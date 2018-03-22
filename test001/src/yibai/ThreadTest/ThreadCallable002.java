@@ -9,7 +9,6 @@ import java.util.concurrent.*;
 public class ThreadCallable002 {
     public static void main(String[] args) {
         bbb();
-
     }
 
     static void aaa() {
